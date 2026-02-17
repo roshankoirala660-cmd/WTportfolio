@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #121035;
+  color: rgb(248, 237, 237);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  background: #01061b;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 60px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.intro span {
+  color: #38bdf8;
+}
+
+.intro img {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid #38bdf8;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #43d7e1;
+}
+
+/* SECTIONS */
+#about {
+  text-align: center;
+}
+
+section {
+  padding: 120px 60px;
+  text-align: left;
+}
+
+.projectlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.box {
+  background: #020617;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #38bdf8;
+}
+
+.box:hover {
+  background-color: #38bdf8;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background: #01061b;
+  color: rgb(255, 252, 252);
+  border: 2px solid #38bdf8;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.skill:hover {
+  background-color: #38bdf8;
+}
+
+.skills h2 {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+/* CONTACT */
+.contact h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+}
